@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <link href="/css/chat.css" rel="stylesheet">
+</head>
+<body>
+    <button id="chatBtn" data-value="0">채팅</button>
+    <div id="chatRoom">
+
+    </div>
+    <div class="layerPopup">
+        <div class="loginPopup">
+            <div id="loginForm">
+                <h2>로그인페이지</h2>
+                <input type="text" id ="userid"  placeholder="아이디를 입력해주세요">
+                <input type="password" id = "userpw"  placeholder="비밀번호를 입력해주세요">
+                <button id="localLogin" class="loginSubmit">로그인</button>
+                
+            </div>
+            <a class="joinBtn" onclick = "location.href = '/user/join'">회원가입</a>
+            <a id="kakao" class="loginSubmit kakao" href="/auth/kakao">카카오 로그인</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/chat.js"></script>
+</body>
+</html>
